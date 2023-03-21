@@ -1,7 +1,7 @@
 # phpsqlserver
 1 - Unduh drivernya di sini https://go.microsoft.com/fwlink/?linkid=2226724<br>
 2 - ekstrak dan pindahkan ke folder c:\xampp\php\ext<br>
-3 - kemudian aktifkan sam klik kanan tombol config pada apache dan pilih php.ini<br>
+3 - kemudian aktifkan xampp klik kanan tombol config pada apache dan pilih php.ini<br>
     Tambahkan baris berikut, seuaikan dengan php berapa yang di pakai contoh disini saya menggunakan php 80<br>
     extension=php_sqlsrv_80_ts.dll<br>
     extension=php_pdo_sqlsrv_80_ts.dll<br>
