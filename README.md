@@ -7,6 +7,7 @@
     extension=php_pdo_sqlsrv_80_ts.dll
 4 - restart xampp nya
 5- buat file koneksi
+<code>
    $this->pdo = new PDO(
             DRIVER_DB.":server=".HOST.";
             Database=".DATABASE_NAME."",
@@ -17,7 +18,9 @@
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             )
     );
+ </code>
 6- sesuaikan attribut server di config.php
+<code>
     <?php
         ini_set( "display_errors", true );
         define( "HOST", "DESKTOP-I8N66OQ" );
@@ -43,8 +46,9 @@
 
 
     ?>
-    
+ </code>   
  7-  cara pakai
+ <code>
       <?php
         include"config.php";
         $data = [];
@@ -55,5 +59,5 @@
 
         echo json_encode($data);
 
-
+</code>
 semoga bermanfaat
