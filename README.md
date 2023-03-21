@@ -25,15 +25,13 @@
 6 - buat file koneksi dan tulis kode seperti set attribut server<br>
 
 <code>
+   
     <?php
         ini_set( "display_errors", true );
         define( "HOST", "DESKTOP-I8N66OQ" );
-        //nama database
         define( "DRIVER_DB", "sqlsrv" );
-        //nama database
         define( "DATABASE_NAME", "tes_sqlsrv" );
         define( "DB_USERNAME", "sa" );
-        //password mysql
         define( "DB_PASSWORD", "123" );
         define('DB_CHARACSET', 'utf8');
         require_once ('Database.php');
@@ -43,6 +41,7 @@
         }
         set_exception_handler( 'handleException' );
     ?>
+    
  </code>  
  
  7 -  cara pakai<br>
