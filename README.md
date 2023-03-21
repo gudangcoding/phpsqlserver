@@ -6,7 +6,7 @@
     extension=php_sqlsrv_80_ts.dll<br>
     extension=php_pdo_sqlsrv_80_ts.dll<br>
 4 - restart xampp nya<br>
-5- buat file koneksi<br>
+5- pastikan file database.php seperti ini<br>
 <code>
    $this->pdo = new PDO(
             DRIVER_DB.":server=".HOST.";
@@ -19,7 +19,7 @@
             )
     );
  </code>
-6- sesuaikan attribut server di config.php<br>
+6- buat file koneksi dan tulis kode seperti set attribut server<br>
 <code>
     <?php
         ini_set( "display_errors", true );
@@ -31,20 +31,13 @@
         define( "DB_USERNAME", "sa" );
         //password mysql
         define( "DB_PASSWORD", "123" );
-
         define('DB_CHARACSET', 'utf8');
-
         require_once ('Database.php');
-
         $db = new Database();
-
         function handleException( $exception ) {
           echo  $exception->getMessage();
         }
-
         set_exception_handler( 'handleException' );
-
-
     ?>
  </code>   
  7-  cara pakai<br>
