@@ -1,12 +1,12 @@
 # phpsqlserver
-1 - Unduh drivernya di sini https://go.microsoft.com/fwlink/?linkid=2226724
-2 - ekstrak dan pindahkan ke folder c:\xampp\php\ext
-3 - kemudian aktifkan sam klik kanan tombol config pada apache dan pilih php.ini
-    Tambahkan baris berikut, seuaikan dengan php berapa yang di pakai contoh disini saya menggunakan php 80
-    extension=php_sqlsrv_80_ts.dll
-    extension=php_pdo_sqlsrv_80_ts.dll
-4 - restart xampp nya
-5- buat file koneksi
+1 - Unduh drivernya di sini https://go.microsoft.com/fwlink/?linkid=2226724<br>
+2 - ekstrak dan pindahkan ke folder c:\xampp\php\ext<br>
+3 - kemudian aktifkan sam klik kanan tombol config pada apache dan pilih php.ini<br>
+    Tambahkan baris berikut, seuaikan dengan php berapa yang di pakai contoh disini saya menggunakan php 80<br>
+    extension=php_sqlsrv_80_ts.dll<br>
+    extension=php_pdo_sqlsrv_80_ts.dll<br>
+4 - restart xampp nya<br>
+5- buat file koneksi<br>
 <code>
    $this->pdo = new PDO(
             DRIVER_DB.":server=".HOST.";
@@ -19,7 +19,7 @@
             )
     );
  </code>
-6- sesuaikan attribut server di config.php
+6- sesuaikan attribut server di config.php<br>
 <code>
     <?php
         ini_set( "display_errors", true );
@@ -47,7 +47,7 @@
 
     ?>
  </code>   
- 7-  cara pakai
+ 7-  cara pakai<br>
  <code>
       <?php
         include"config.php";
@@ -59,5 +59,5 @@
 
         echo json_encode($data);
 
-</code>
+</code><br>
 semoga bermanfaat
