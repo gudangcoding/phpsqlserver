@@ -8,6 +8,7 @@
 4 - restart xampp nya<br>
 5- pastikan file database.php seperti ini<br>
 <code>
+    <?php
    $this->pdo = new PDO(
             DRIVER_DB.":server=".HOST.";
             Database=".DATABASE_NAME."",
@@ -18,8 +19,11 @@
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             )
     );
+?>
  </code>
-6- buat file koneksi dan tulis kode seperti set attribut server<br>
+ 
+6 - buat file koneksi dan tulis kode seperti set attribut server<br>
+
 <code>
     <?php
         ini_set( "display_errors", true );
@@ -39,8 +43,10 @@
         }
         set_exception_handler( 'handleException' );
     ?>
- </code>   
- 7-  cara pakai<br>
+ </code>  
+ 
+ 7 -  cara pakai<br>
+ 
  <code>
       <?php
         include"config.php";
@@ -49,8 +55,8 @@
         foreach ($query as $a) {
             $data[] = $a;
         }
-
         echo json_encode($data);
+</code>
+<br>
 
-</code><br>
 semoga bermanfaat
